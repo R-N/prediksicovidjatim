@@ -22,5 +22,5 @@ statsmodels
 #numba
 #memory_profiler
 #line_profiler
-#prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
-#lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
+#prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim --depth 1
+#lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit --depth 1
