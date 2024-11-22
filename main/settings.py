@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "web",
+    "web.WebConfig",
 ]
 
 MIDDLEWARE = [
@@ -86,11 +86,15 @@ DATABASES = {
 }
 
 DATABASE_URL = os.getenv("DATABASE_URL")
-DATABASES['default'] = dj_database_url.config(default=DATABASE_URL, conn_max_age=600, ssl_require=True) #use DATABASE_URL
+DATABASES['default'] = dj_database_url.config(default=DATABASE_URL, conn_max_age=600, ssl_require=False) #use DATABASE_URL
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 DATABASES['default']['DISABLE_SERVER_SIDE_CURSORS'] = True #disable server-side cursor to support connection pooling
 DATABASES['default']['AUTOCOMMIT'] = False
-
+DATABASES['default']['OPTIONS'] = {
+    'options': '-c search_path=prediksicovidjatim',
+    #'ssl': 'allow', 
+    'sslmode': 'allow', 
+}
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -124,4 +128,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
-django_heroku.settings(locals())
+django_heroku.settings(locals(), databases=False)
