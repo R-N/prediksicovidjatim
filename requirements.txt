@@ -11,8 +11,8 @@ matplotlib
 #pprint
 mpld3
 scipy
-#psycopg2-binary
-psycopg2
+psycopg2-binary
+#psycopg2
 dj-database-url
 python-dotenv
 scikit-learn
