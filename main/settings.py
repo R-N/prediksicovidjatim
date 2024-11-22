@@ -85,7 +85,7 @@ DATABASES = {
     }
 }
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("POSTGRES_URL") or os.getenv("DATABASE_URL")
 DATABASES['default'] = dj_database_url.config(default=DATABASE_URL, conn_max_age=600, ssl_require=False) #use DATABASE_URL
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 DATABASES['default']['DISABLE_SERVER_SIDE_CURSORS'] = True #disable server-side cursor to support connection pooling
