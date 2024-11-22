@@ -15,7 +15,7 @@ import django_heroku
 
 from dotenv import load_dotenv
 load_dotenv()
-import dj_database_url
+#import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -128,4 +128,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
-django_heroku.settings(locals(), databases=False)
+#django_heroku.settings(locals(), databases=False)
