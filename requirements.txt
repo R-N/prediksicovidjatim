@@ -11,7 +11,7 @@ matplotlib
 #pprint
 mpld3
 scipy
-psycopg2-binary
+psycopg2-binary~=2.9.3
 #psycopg2
 dj-database-url
 python-dotenv
@@ -22,5 +22,5 @@ statsmodels
 #numba
 memory_profiler
 line_profiler
-git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
-git+https://github.com/R-N/lmfit-py.git#egg=lmfit
+prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
+lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
