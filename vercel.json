@@ -15,8 +15,5 @@
       "src": "/(.*)",
       "dest": "main/wsgi.py"
     }
-  ],
-  "engines": {
-    "node": "18.x"
-  }
+  ]
 }
