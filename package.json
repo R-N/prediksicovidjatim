@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "@vercel/python": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vercel/analytics": "^1.4.1"
   }
 }
