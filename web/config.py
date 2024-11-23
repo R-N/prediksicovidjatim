@@ -8,4 +8,4 @@ class WebConfig(AppConfig):
     verbose_name = "Prediksi Covid Jatim"
     def ready(self):
         database.init()
-        ModelDataRepo.init_weights()
+        #ModelDataRepo.init_weights()

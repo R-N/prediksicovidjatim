@@ -3,24 +3,19 @@ django
 #django-heroku
 requests-html
 arcgis
-#pandas
 numpy
 matplotlib
-#cartopy
-#watermark
-#pprint
 mpld3
-scipy
+#scipy
 psycopg2-binary
 #psycopg2
 dj-database-url
 python-dotenv
-scikit-learn
-numdifftools
-#lmfit
-statsmodels
-#numba
-#memory_profiler
-#line_profiler
-#prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim --depth 1
-#lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit --depth 1
+#scikit-learn
+#numdifftools
+#statsmodels
+prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
+lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
+sklearn @ git+https://github.com/R-N/sklearn_lite.git#egg=sklearn
+statsmodels @ git+https://github.com/R-N/statsmodels_lite.git#egg=statsmodels
+scipy# @ git+https://github.com/R-N/scipy_lite.git#egg=scipy

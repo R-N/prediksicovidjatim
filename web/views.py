@@ -3,15 +3,12 @@ from django.http import HttpResponse, Http404
 
 from web.models import Greeting
 
-import matplotlib.pyplot as plt
 import mpld3
 import numpy as np
 
 from prediksicovidjatim.data.model import ModelDataRepo
 from prediksicovidjatim import config, util, database
 from prediksicovidjatim.modeling import SeicrdRlcModel, ModelPlotter
-
-import math
 
 from django.template.defaulttags import register
 @register.filter
