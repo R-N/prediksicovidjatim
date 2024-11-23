@@ -6,7 +6,7 @@ arcgis
 numpy
 matplotlib
 mpld3
-#scipy
+scipy
 psycopg2-binary
 #psycopg2
 dj-database-url
@@ -18,4 +18,4 @@ prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=
 lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
 sklearn @ git+https://github.com/R-N/sklearn_lite.git#egg=sklearn
 statsmodels @ git+https://github.com/R-N/statsmodels_lite.git#egg=statsmodels
-scipy# @ git+https://github.com/R-N/scipy_lite.git#egg=scipy
+#scipy @ git+https://github.com/R-N/scipy_lite.git#egg=scipy
