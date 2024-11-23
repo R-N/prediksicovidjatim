@@ -15,9 +15,7 @@
       "dest": "main/wsgi.py"
     }
   ],
-  "functions": {
-    "*": {
-      "excludeFiles": "/{.next,.cache,node_modules,.git,__pycache__}/**"
-    }
+  "engines": {
+    "node": "18.x"
   }
 }
