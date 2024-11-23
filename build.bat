@@ -1,0 +1,6 @@
+setlocal
+SET VERCEL_BUILDER_DEBUG=1
+SET VERCEL_BUILD_SYSTEM_REPORT=1
+echo %VERCEL_BUILD_SYSTEM_REPORT%
+vercel --prod --debug
+endlocal
