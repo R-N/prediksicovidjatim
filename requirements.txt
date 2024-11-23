@@ -6,7 +6,7 @@ arcgis
 numpy
 matplotlib
 mpld3
-scipy
+#scipy
 psycopg2-binary
 #psycopg2
 dj-database-url
