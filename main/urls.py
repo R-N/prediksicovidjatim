@@ -3,6 +3,7 @@ from django.views.static import serve
 from django.conf import settings
 
 from django.contrib import admin
+from django.conf.urls.static import static
 
 admin.autodiscover()
 
@@ -27,3 +28,4 @@ urlpatterns = [
     #path("map/", web.views.map),
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
