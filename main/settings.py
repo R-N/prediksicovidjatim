@@ -13,8 +13,11 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 #import django_heroku
 
-from dotenv import load_dotenv
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except (ModuleNotFoundError, ImportError):
+    pass
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
