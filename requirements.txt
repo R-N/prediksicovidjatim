@@ -20,3 +20,4 @@ statsmodels @ git+https://github.com/R-N/statsmodels_lite.git#egg=statsmodels
 #arcgis @ git+https://github.com/R-N/arcgis-python-api.git#egg=arcgis
 lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
 prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
+whitenoise
