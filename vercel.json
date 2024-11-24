@@ -17,5 +17,8 @@
       "src": "/(.*)",
       "dest": "main/wsgi.py"
     }
+  ],
+  "commands": [
+    "python log_environment.py"
   ]
 }
