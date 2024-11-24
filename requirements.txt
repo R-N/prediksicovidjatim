@@ -14,9 +14,9 @@ python-dotenv
 #scikit-learn
 #numdifftools
 #statsmodels
-prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
-lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
+#scipy @ git+https://github.com/R-N/scipy_lite.git#egg=scipy
 sklearn @ git+https://github.com/R-N/sklearn_lite.git#egg=sklearn
 statsmodels @ git+https://github.com/R-N/statsmodels_lite.git#egg=statsmodels
-#scipy @ git+https://github.com/R-N/scipy_lite.git#egg=scipy
 #arcgis @ git+https://github.com/R-N/arcgis-python-api.git#egg=arcgis
+lmfit @ git+https://github.com/R-N/lmfit-py.git#egg=lmfit
+prediksicovidjatim @ git+https://github.com/R-N/prediksicovidjatim-core.git#egg=prediksicovidjatim
