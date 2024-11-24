@@ -9,10 +9,7 @@
         "runtime": "python3.9",
         "analytics": true,
         "report": true
-      },
-      "commands": [
-        "python log_environment.py"
-      ]
+      }
     }
   ],
   "routes": [
