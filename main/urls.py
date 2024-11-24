@@ -1,4 +1,6 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.static import serve
+from django.conf import settings
 
 from django.contrib import admin
 
@@ -23,4 +25,5 @@ urlpatterns = [
     path("model/<str:kabko>", web.views.model),
     path("about/", web.views.about),
     #path("map/", web.views.map),
+    re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
